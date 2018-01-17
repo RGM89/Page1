@@ -2,7 +2,7 @@
 <html lang="ja">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" name="viewport" content="width=device-width,initial-scale=1">
     <title>Google Chart Toolsの練習</title>
 </head>
 
@@ -13,12 +13,12 @@
     <!--Load the AJAX API-->
     <script src="https://www.google.com/jsapi"></script>
     <!DOCTYPE html>
-<html lang="ja">
+    <html lang="ja">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Google Chart Toolsの練習</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <title>Google Chart Toolsの練習</title>
+    </head>
 
     <script>
         // Load the Visualization API and the piechart package.
@@ -67,11 +67,42 @@
         }
 
     </script>
-  <div>
-    大学進学の時期である18歳あたりの転出が一気に増える。<br>
-    後卒業の時期になると地元で就職する人がいるせいか転入が伸びている。<br>
-    しかしそれ以降の年齢はおよそ前後していない。<br>
-  </div>
+    <div>
+        大学進学の時期である18歳あたりの転出が一気に増える。<br>
+        後卒業の時期になると地元で就職する人がいるせいか転入が伸びている。<br>
+        しかしそれ以降の年齢はおよそ前後していない。<br>
+    </div>
+    <img id= "cosmo" src="%E3%82%B3%E3%82%B9%E3%83%A2.png" alt="" width="100px" height=auto>
+    <div id="charaname">　</div>
+    <div id="text">
+        ▼クリックで解説スタート！
+    </div>
+    <div>
+        <button type="button" onClick="text()">▼</button>
+    </div>
+    <img id= "bera" src="%E3%83%99%E3%83%A9%E3%83%BB%E3%83%AD%E3%83%8A.png" alt="" width="100px" height=auto>
+
+    <script>
+        var textnum = 0;
+        var textbox = document.getElementById("text");
+        var charaname = document.getElementById("charaname");
+        function text() {
+            if (textnum == 0) {
+                textbox.innerHTML="test1";
+                charaname.innerHTML="コスモ";
+                textnum++;
+            }else if(textnum == 1){
+                textbox.innerHTML="test2";
+                charaname.innerHTML="ベラ";
+                textnum++;
+            }else if(textnum == 2){
+                textbox.innerHTML=" ▼クリックで解説スタート！"
+                charaname.innerHTML="　";
+                textnum=0;
+            }
+        }
+
+    </script>
 </body>
 
 </html>
