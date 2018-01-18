@@ -21,6 +21,14 @@
     </head>
 
     <script>
+        getWindowSize();
+        function getWindowSize(){
+            var sW,sH,s;
+	        sW = window.innerWidth;
+	        sH = window.innerHeight;
+
+	        s = "横幅 = " + sW + " / 高さ = " + sH;
+        }
         // Load the Visualization API and the piechart package.
         google.load('visualization', '1.1', {
             'packages': ['line'],
@@ -57,8 +65,8 @@
                 chart: {
                     title: '岐阜県高山市　年齢階級別純移動数の時系列分析',
                 },
-                width: 80vw,
-                height: auto,
+                width: sw,
+                height: sw*0.5,
             };
 
             var chart = new google.charts.Line(document.getElementById('linechart_material'));
