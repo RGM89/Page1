@@ -21,14 +21,6 @@
     </head>
 
     <script>
-        getWindowSize();
-        function getWindowSize(){
-            var sW,sH,s;
-	        sW = window.innerWidth;
-	        sH = window.innerHeight;
-
-	        s = "横幅 = " + sW + " / 高さ = " + sH;
-        }
         // Load the Visualization API and the piechart package.
         google.load('visualization', '1.1', {
             'packages': ['line'],
@@ -38,6 +30,9 @@
         google.setOnLoadCallback(drawChart);
 
         function drawChart() {
+		
+		var=sW = window.innerWidth;
+	        var=sH = window.innerHeight;
 
             var data = new google.visualization.arrayToDataTable([
                 ['年齢階級', '1980-1985', '1985-1990', '1990-1995', '1995-2000', '2000-2005', '2005-2010'],
