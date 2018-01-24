@@ -1,0 +1,59 @@
+#mainblock{
+    position: relative;
+    zoom: 100%;
+}
+
+#charaimg{
+    width: 100px;
+    height: auto;
+}
+
+#charaname{
+    position: absolute;
+    top: 0px;
+    left: 110px;
+}
+
+#text{
+    display: inline-block;
+    position: absolute;
+    top: 20px;
+    width: 280px;
+}
+
+#textnext{
+    position: absolute;
+    top: 75px;
+    left: 350px;
+}
+
+#textwin{
+    position: absolute;
+    top: 20px;
+    left: 101px;
+    z-index: -1;
+    
+    background-color: cyan;
+    width: 280px;
+    height: 80px;
+}
+
+#namewin{
+    position: absolute;
+    top: 0px;
+    z-index: -1;
+    left: 101px;
+    
+    background-color: red;
+    width: 140px;
+    height: 20px;
+}
+
+#mouse{
+    position: absolute;
+    left: 0px;
+}
+
+#test{
+    
+}
