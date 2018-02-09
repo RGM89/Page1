@@ -1,7 +1,16 @@
-#mainblock{
-    position: relative;
-    zoom: 100%;
-}
+
+    @media only screen and (min-width: 800px){
+        #mainblock{
+            position: relative;
+            zoom: 170%;
+        }
+    }
+    @media only screen and (max-width: 799px) {
+        #mainblock{
+            position: relative;
+            zoom: 100vw;
+        }
+    }
 
 #charaimg{
     width: 100px;
